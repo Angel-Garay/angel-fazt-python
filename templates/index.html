@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    <form action="/add_contact" method="POST">
+        <input type="text" name="fullname" placeholder="Fullname">
+        <input type="text" name="phone" placeholder="Phone">
+        <input type="text" name="email" placeholder="Email">
+        <button>
+            Save
+        </button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Fullname</td>
+                <td>Phone</td>
+                <td>Email</td>
+                <td>Operations</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.1 }}</td> <!-- se pone aca con 2 llaves porque quiero los valores que tiene dentro -->>
+                    <td>{{ contact.2 }}</td>
+                    <td>{{ contact.3 }}</td>
+                    <td>
+                        <a href="/edit/{{contact.0}}">Edit</a>
+                        <a href="/delete/{{contact.0}}">Delete</a> <!-- se pone 'contact.0' porque nos sirve para diferenciar, nosotros en este caso vamos a borrar y para eso es necesario saber cual vamos a borrar con un ID, esto se ve tmb en el navegador en parte de abajo donde vemos que url tendra la direccion a la que va ir el A REF-->
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

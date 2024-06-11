@@ -1,0 +1,13 @@
+{% extends 'layout.html'%}
+
+{% block body %}
+
+    <form action="/update/{{contact.0}}" method="POST">
+        <input type="text" name="fullname" placeholder="Fullname" value="{{ contact.1 }}">
+        <input type="text" name="phone" placeholder="Phone" value="{{ contact.2 }}">
+        <input type="text" name="email" placeholder="Email" value="{{ contact.3 }}"> <!-- aca lo importante es el value porque es el dato que vamos a cambiar y que el usuario verá antes de hacerlo-->
+        <button type="submit">
+            Save
+        </button>
+    </form>
+{% endblock %}
