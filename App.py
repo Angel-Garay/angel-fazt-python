@@ -1,7 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mysqldb import MySQL
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
+
+bootstrap = Bootstrap(app)
 
 #conexion a mysql
 app.config['MYSQL_HOST'] = 'localhost'
@@ -15,7 +18,7 @@ mysql = MySQL(app)
 
 
 #settings
-app.secret_key = 'mysecretkey '
+app.secret_key = 'mysecretkey'
 
 @app.route('/')
 def Index():

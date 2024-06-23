@@ -2,12 +2,32 @@
 
 {% block body %}
 
-    <form action="/update/{{contact.0}}" method="POST">
-        <input type="text" name="fullname" placeholder="Fullname" value="{{ contact.1 }}">
-        <input type="text" name="phone" placeholder="Phone" value="{{ contact.2 }}">
-        <input type="text" name="email" placeholder="Email" value="{{ contact.3 }}"> <!-- aca lo importante es el value porque es el dato que vamos a cambiar y que el usuario verá antes de hacerlo-->
-        <button type="submit">
-            Save
-        </button>
-    </form>
+    <div class="col-md-4 offset-md-4">
+
+        <div class="card card-body">
+            <form action="/update/{{contact.0}}" method="POST">
+
+                <div class="form-group">
+                    <input type="text" name="fullname" placeholder="Fullname" value="{{ contact.1 }}" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="phone" placeholder="Phone" value="{{ contact.2 }}" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" name="email" placeholder="Email" value="{{ contact.3 }}" class="form-control"> <!-- aca lo importante es el value porque es el dato que vamos a cambiar y que el usuario verá antes de hacerlo-->
+                </div>
+
+                <div class="form-group">
+                     <button type="submit" class="btn btn-primary btn-block">
+                        Save
+                    </button>
+                </div>
+                
+            </form>
+        </div>
+
+    </div>
+
 {% endblock %}
