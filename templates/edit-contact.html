@@ -1,5 +1,12 @@
 {% extends 'layout.html'%}
 
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="/">Cerrar sesion</a>
+    </nav>
+{% endblock %}
+
 {% block body %}
 
     <div class="col-md-4 offset-md-4">
@@ -7,18 +14,21 @@
         <div class="card card-body">
             <form action="/update/{{contact.0}}" method="POST">
 
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+
                 <div class="form-group">
                     <input type="text" name="fullname" placeholder="Fullname" value="{{ contact.1 }}" class="form-control">
                 </div>
-
+                <br>
                 <div class="form-group">
                     <input type="text" name="phone" placeholder="Phone" value="{{ contact.2 }}" class="form-control">
                 </div>
-                
+                <br>
                 <div class="form-group">
                     <input type="text" name="email" placeholder="Email" value="{{ contact.3 }}" class="form-control"> <!-- aca lo importante es el value porque es el dato que vamos a cambiar y que el usuario verá antes de hacerlo-->
                 </div>
-
+                <br>
                 <div class="form-group">
                      <button type="submit" class="btn btn-primary btn-block">
                         Save

@@ -1,0 +1,21 @@
+{% extends './layout.html' %}
+
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="/">Flask Contactos</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+{% endblock%}
+
+{% block body %}
+    
+    <h1>Por ahora bienvenido, {{ current_user.fullname }}</h1>
+    <h2>Pero aca lo que me tiene que llevar es la pagina para agregar CONTACTOS</h2>
+    <br>
+    <a class="btn btn-secondary" href="{{ url_for('logout') }}">Cerrar Sesión</a>
+
+{% endblock %}
