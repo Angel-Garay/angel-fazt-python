@@ -39,7 +39,7 @@ Sigue estos pasos para instalar y ejecutar la app en tu entorno local
 
 	```bash
  		cd /opt/lampp
- 		ls									<!-- tiene que existir el manager-linux-x64.run -->
+ 		ls				<!-- tiene que existir el manager-linux-x64.run -->
  		sudo ./manager-linux-x64.run
 	```
 
