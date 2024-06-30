@@ -1,7 +1,8 @@
 # Proyecto: CRUD con Python3 + Flask + MySQL + Autenticación
 
-<br>
+
 ### Instalación
+<br>
 Sigue estos pasos para instalar y ejecutar la app en tu entorno local
 
 <br><br>
