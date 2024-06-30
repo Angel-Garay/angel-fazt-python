@@ -43,10 +43,10 @@ python3 App.py
 
 
 ### Descripción del Proyecto
-Este proyecto es una app web hecha con Flask que permite a los usuarios registrarse, iniciar sesión y gestionar 
-sus contactos. Utiliza MySQL como base de datos para almacenar la información. La autenticación se maneja a través 
-de Flask-Login, proporcionando una experiencia segura y personalizada para cada usuario. Además, se integra con 
-un servidor LAMP para la ejecución y gestión de las solicitudes.
+> Este proyecto es una app web hecha con Flask que permite a los usuarios registrarse, iniciar sesión y gestionar
+> sus contactos. Utiliza MySQL como base de datos para almacenar la información. La autenticación se maneja a
+> través de Flask-Login, proporcionando una experiencia segura y personalizada para cada usuario. Además, se integra
+> con un servidor LAMP para la ejecución y gestión de las solicitudes.
 
 
 ### Funcionalidades:
@@ -66,6 +66,7 @@ un servidor LAMP para la ejecución y gestión de las solicitudes.
 - **Bootstrap**: Framework de CSS para un diseño.
 
 
+---
 ### Links de vidos de los cuales surge la idea:
 [Fazt](https://www.youtube.com/watch?v=IgCfZkR8wME&t=1763s)
 [UskoKruM2010](https://www.youtube.com/watch?v=FX0lMm_Qj10&t=2067s)
