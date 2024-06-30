@@ -52,9 +52,10 @@ Sigue estos pasos para instalar y ejecutar la app en tu entorno local
 ---
 ## Descripción del Proyecto
 
-	Este proyecto es una app web hecha con Flask que permite a los usuarios registrarse, iniciar sesión y gestionar sus contactos. Utiliza MySQL como base de datos para almacenar la 
- 	información. La autenticación se maneja a través de Flask-Login, proporcionando una experiencia segura y personalizada para cada usuario. Además, se integra con un servidor LAMP 
-	para la ejecución y gestión de las solicitudes.
+	Este proyecto es una app web hecha con Flask que permite a los usuarios registrarse, iniciar sesión y gestionar 
+ 	sus contactos. Utiliza MySQL como base de datos para almacenar la información. La autenticación se maneja a través 
+  	de Flask-Login, proporcionando una experiencia segura y personalizada para cada usuario. Además, se integra con 
+   	un servidor LAMP para la ejecución y gestión de las solicitudes.
 
 
 ## Funcionalidades:
