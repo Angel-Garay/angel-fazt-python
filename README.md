@@ -1,8 +1,10 @@
 # Proyecto: CRUD con Python3 + Flask + MySQL + Autenticación
 
 
+
 ### Instalación
 Sigue estos pasos para instalar y ejecutar la app en tu entorno local
+
 
 1. **Clona el repositorio**
 ```bash
@@ -10,16 +12,19 @@ git clone https://github.com/Angel-Garay/angel-fazt-python.git
 cd angel-fazt-python
 ```
 
+
 2. **Crea y activa un entorno virtual:**
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
+
 3. **Instala las dependencias:**
 ```bash
 pip install -r requirements.txt
 ```
+
 
 4. **Configura la base de datos MySQL:**
 - Aseguráte de tener MySQL instalado y ejecutándose.
@@ -29,6 +34,7 @@ pip install -r requirements.txt
 <!-- Aca va la DB usuarios creada manualmente, hay que crear 1 usuario si o si -->
 ```
 
+
 5. **Inicializa el servicio LAMPP**
 ```bash
 cd /opt/lampp
@@ -36,10 +42,12 @@ ls				<!-- tiene que existir el manager-linux-x64.run -->
 sudo ./manager-linux-x64.run
 ```
 
+
 6. **Ejecuta la app**
 ```bash
 python3 App.py
 ```
+
 
 
 ### Descripción del Proyecto
@@ -49,11 +57,13 @@ python3 App.py
 > con un servidor LAMP para la ejecución y gestión de las solicitudes.
 
 
+
 ### Funcionalidades:
 - Registro e inicio de sesión de usuarios.
 - Gestión de contactos.
 - Integración con MySQL para almacenamiento persistente de datos.
 - Uso de LAMP para el despliegue de la aplicación.
+
 
 
 ### Tecnologías Usadas
@@ -66,6 +76,7 @@ python3 App.py
 - **Bootstrap**: Framework de CSS para un diseño.
 
 
+
 ---
 ### Links de vidos de los cuales surge la idea:
 [Fazt](https://www.youtube.com/watch?v=IgCfZkR8wME&t=1763s)
@@ -73,10 +84,9 @@ python3 App.py
 [JonMircha](https://www.youtube.com/watch?v=FlsoBiteuPM&t=1313s)
 
 
+
 ---
 #### Hecho por Angel Garay
 
 
-
- 
 
